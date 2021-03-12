@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   private
 
   def users
-    users = [
+    [
       { id: 1, name: "Leslie Knope" },
       { id: 2, name: "Ben Wyatt" },
       { id: 3, name: "Ron Swanson" },

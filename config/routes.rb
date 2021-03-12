@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :users, only: [:index, :show] do
-    resources :projects, only: [:index]
-  end
+  resources :users, only: [:index, :show]
+  resources :projects, only: [:index]
 end
