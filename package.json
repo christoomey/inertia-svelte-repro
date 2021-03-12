@@ -2,9 +2,13 @@
   "name": "inertia-svelte-repro",
   "private": true,
   "dependencies": {
+    "@inertiajs/inertia": "^0.8.5",
+    "@inertiajs/inertia-svelte": "^0.6.1",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.2.1",
+    "svelte": "^3.35.0",
+    "svelte-loader": "^3.0.0",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
