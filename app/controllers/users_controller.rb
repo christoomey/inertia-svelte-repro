@@ -1,15 +1,25 @@
 class UsersController < ApplicationController
   def index
+    render(inertia: "Users", props: { users: users })
+  end
+
+  def show
     render(
-      inertia: "Users",
+      inertia: "User",
       props: {
-        users: [
-          { id: 1, name: "Leslie Knope" },
-          { id: 2, name: "Ben Wyatt" },
-          { id: 3, name: "Ron Swanson" },
-          { id: 4, name: "Anne Perkins" },
-        ]
+        user: users.find { |u| u[:id].to_s == params[:id] }
       }
     )
+  end
+
+  private
+
+  def users
+    users = [
+      { id: 1, name: "Leslie Knope" },
+      { id: 2, name: "Ben Wyatt" },
+      { id: 3, name: "Ron Swanson" },
+      { id: 4, name: "Anne Perkins" },
+    ]
   end
 end
