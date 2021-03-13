@@ -14,3 +14,9 @@ of the following issues:
 I believe these are all variations of issues related to how webpack is building
 the project, and how it interacts with the built package as well as the Svelte
 dep / peerDep, but I'm unclear on how to resolve.
+
+Reproducing the Issue
+---------------------
+
+The `Cannot read property 'c' of undefined` issue only seems to show up after
+clicking on a link, e.g. clicking on one of the links on the "/users" page.
